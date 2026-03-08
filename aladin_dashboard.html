@@ -361,7 +361,7 @@
 
 <div class="config-bar">
   <label>BACKEND URL</label>
-  <input type="text" id="endpointInput" value="http://localhost:8000" placeholder="http://your-backend.com" />
+  <input type="text" id="endpointInput" value="https://aladin-motors-kenya.onrender.com" placeholder="http://your-backend.com" />
   <button class="btn" onclick="saveEndpoint()">Connect</button>
   <label style="margin-left:16px">AUTO-REFRESH</label>
   <select class="btn" id="refreshSelect" onchange="setRefreshInterval()">
@@ -495,7 +495,7 @@
 </div>
 
 <script>
-let ENDPOINT = localStorage.getItem('wm_endpoint') || 'http://localhost:8000';
+let ENDPOINT = localStorage.getItem('wm_endpoint') || 'https://aladin-motors-kenya.onrender.com';
 let refreshInterval = null;
 let trafficChart = null;
 let browserChart = null;
